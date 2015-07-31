@@ -1,0 +1,7 @@
+<h4><%= @pin.title %></h4>
+<%= image_tag src="#{@pin.image_url}", :class => "pin-photo" %>
+<p>
+    <%= @pin.comment %>
+</p>
+
+<%= link_to "Edit pin", edit_user_pin_path(@pin.user_id,@pin) %>
